@@ -46,6 +46,7 @@ h3{margin:60px 0 0;color:var(--acc);text-align:center;font:400 clamp(36px,8vw,52
 .pol.w .img{aspect-ratio:4/3}
 .pol.in .img{filter:none}
 .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 28%}
+.pol.top .img img{object-position:center 0}
 .pol.fade.in .img{filter:sepia(.55) contrast(.9) brightness(1.05) saturate(.8)}
 .img::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(125deg,rgba(255,255,255,.3),transparent 40%)}
 .cap{flex:1;display:flex;align-items:center;justify-content:center;text-align:center;font:700 26px/1 "Caveat",cursive;padding:0 6px}
@@ -165,11 +166,11 @@ var CH=[
 {t:"The Circle She Found",s:"She married me and got my friends too. Then their wives became hers.",c:"a",g:[{p:[
  ["08-the-circle/c1_friends-group.jpg","The whole gang","Bhumit & Anjali. Mohit & Dimple. Rishabh & Preksha. Kajal & Suyog. They were my friends first. Now they’re her people. Preksha started out as her friend and turned into a sister, and even Pratik, my cousin, is in, waiting for his wedding so she can dance to “Lo Chali Main”.","w"]]}]},
 {t:"Zing",s:"",c:"b2",id:"zing",quote:"In Hotel Transylvania, it’s called a Zing. The moment you see her, and just know.",g:[{p:[
- ["08-zing/01-first-meeting/z06_cafe-window-grey-kurta.jpg","25 May 2022","Zing. She’s the one."],
+ ["08-zing/01-first-meeting/z06_cafe-window-grey-kurta.jpg","25 May 2022","Zing. She’s the one.","top"],
  ["08-zing/02-first-date/z05_sky-selfie-maroon-shirt.jpg","First date","My first date till I turned 26. Magical."],
  ["08-zing/03-friends-wedding/z01_pink-anarkali-navy-kurta-hall.jpg","Friend’s wedding","Courting, and already matching."],
  ["08-zing/04-engagement/z04_prachi-orange-lehenga-mirror-wall.jpg","17 June 2022","Our engagement day. I wasn’t there (weird, right?). But my presence was there in her heart."],
- ["08-zing/05-first-family-function/z07_purple-saree-teal-shirt.jpg","First family function","The saree that knocked me off."],
+ ["08-zing/05-first-family-function/z07_purple-saree-teal-shirt.jpg","First family function","The saree that knocked me off.","top"],
  ["08-zing/06-proposal/z14_ring-showing-at-home.jpg","18 December 2022","Dance practice turned into a proposal."],
  ["08-zing/07-pre-wedding-shoot/z02_beach-shoot-flowing-pink-gown.jpg","Pre-wedding shoot","Spreading our love across Mumbai."],
  ["08-zing/07-pre-wedding-shoot/z03_cafe-selfie-plaid-shirt.jpg","Between the shots","Enjoyed it a lot, and the camera could tell."],
@@ -221,8 +222,8 @@ var DIV='<div class="div"><i></i><svg viewBox="0 0 46 20"><use href="#dv"/></svg
 var main=document.getElementById("chapters"),n=0,CLS={};
 function pol(d){
   var r=((n*3)%7-3)*1.4,t=((n*5)%9-4)*1.5;n++;
-  var o=d[3]||"",w=o.indexOf("w")>-1?" w":"",f=o.indexOf("fade")>-1?" fade":"";
-  return '<div class="pol'+w+f+'" style="--r:'+r+'deg;--t:'+t+'deg"><span class="tape"></span><div class="card"><div class="face"><div class="img"><img loading="lazy" alt="" src="'+P+d[0]+'" onerror="this.style.display=\'none\'"></div><div class="cap">'+d[1]+'</div><span class="tap">tap to turn</span></div><div class="face back">'+d[2]+'</div></div></div>';
+  var o=d[3]||"",w=o.indexOf("w")>-1?" w":"",f=o.indexOf("fade")>-1?" fade":"",tp=o.indexOf("top")>-1?" top":"";
+  return '<div class="pol'+w+f+tp+'" style="--r:'+r+'deg;--t:'+t+'deg"><span class="tape"></span><div class="card"><div class="face"><div class="img"><img loading="lazy" alt="" src="'+P+d[0]+'" onerror="this.style.display=\'none\'"></div><div class="cap">'+d[1]+'</div><span class="tap">tap to turn</span></div><div class="face back">'+d[2]+'</div></div></div>';
 }
 CH.forEach(function(c){
   var s=document.createElement("section");s.className="s sec "+c.c;if(c.id)s.id=c.id;if(c.strike)s.dataset.strike=1;
