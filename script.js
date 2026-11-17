@@ -39,7 +39,8 @@ var CH=[
 {t:"Masi’s Girl",s:"Kiara has a hundred people to run to. She always runs to her Masi first.",c:"a",g:[{p:[
  ["05-kiara/holding-hands.jpg","Masi & Kiara","Tiny hand, big trust."],
  ["05-kiara/hug-purple-dress.jpg","Run, run, hug","The moment she sees her Masi, everyone else can wait."],
- ["05-kiara/video-call-hug.jpg","Even over a screen","Distance can’t stop this hug."]]}]},
+ ["05-kiara/video-call-hug.jpg","Even over a screen","Distance can’t stop this hug."],
+ ["05-kiara/better-together-with-kiara.jpg","Better together","Under the sparkle, Kiara still runs straight to her Masi."]]}]},
 {t:'<span class="strike">Bahu</span> Beti, a Blessing',s:"The family she married into, and the daughter they gained.",c:"b3",strike:1,g:[{p:[
  ["10-family-after-marriage/birthday-cake-red-polo.jpg","Papa’s Prachi","She says what I can’t say to my father, just like her own: “Yeh acha nahi hai, yeh nahi karna.”"],
  ["10-family-after-marriage/hug-grey-saree.jpg","Chai partners","Mummy and she go along like old friends. The chai is always on."],
